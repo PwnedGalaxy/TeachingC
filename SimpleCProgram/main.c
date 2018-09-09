@@ -5,6 +5,12 @@
 int bad()
 {
     printf("Bad input, please follow instructions\n");
+
+    printf("Press enter key to continue...\n");
+    char c;
+    while((c = getchar()) != '\n' && c != EOF); /* clearing the buffer */
+    getchar(); /* waiting for one more key */
+
     return -1;
 }
 
