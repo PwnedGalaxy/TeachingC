@@ -3,6 +3,15 @@
 
 int main()
 {
-    printf("Hello world!\n");
-    return 0;
+    int num;
+
+    printf("Enter a number to count to: ");
+    scanf("%d", &num);
+
+    for(int i = 1; i <= num; ++num)
+    {
+        printf("%d\n", i);
+    }
+
+    printf("Done!\n");
 }
