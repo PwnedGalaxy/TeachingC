@@ -8,7 +8,7 @@ int main()
     printf("Enter a number to count to: ");
     scanf("%d", &num);
 
-    for(int i = 1; i <= num; ++num)
+    for(int i = 1; i <= num; ++i)
     {
         printf("%d\n", i);
     }
