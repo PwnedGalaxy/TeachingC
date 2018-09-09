@@ -28,7 +28,7 @@ int main()
     printf("A simple program by GamingG, Cazif, et al.\n\n");
 
     printf("What is your name?\n");
-    scanf("%s", name);
+    scanf("%[^\n]s", name);
 
     printf("\nHello, %s\n", name);
 
