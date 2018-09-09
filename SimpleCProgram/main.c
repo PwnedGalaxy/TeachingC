@@ -2,14 +2,19 @@
 #include <stdlib.h>
 /*GamingG is a great teacher*/
 
-int bad()
+void enterKeyToContinue()
 {
-    printf("Bad input, please follow instructions\n");
-
     printf("Press enter key to continue...\n");
     char c;
     while((c = getchar()) != '\n' && c != EOF); /* clearing the buffer */
     getchar(); /* waiting for one more key */
+}
+
+int bad()
+{
+    printf("Bad input, please follow instructions\n");
+
+    enterKeyToContinue();
 
     return -1;
 }
@@ -51,5 +56,9 @@ int main()
     } while(again!=0);
 
     printf("Done!\n");
-    printf("Thanks for using our program, %s!", name);
+    printf("Thanks for using our program, %s!\n\n", name);
+
+    enterKeyToContinue();
+
+    return 0;
 }
